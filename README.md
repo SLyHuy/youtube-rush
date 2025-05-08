@@ -14,7 +14,7 @@
 
 ## 🔄 Change Log
 
-### May 8
+### * Version 2.1 - May 8
 
 - Updated progress bar positioning and `z-index`
 - Removed background from control buttons (`backdrop-filter`, `background`)

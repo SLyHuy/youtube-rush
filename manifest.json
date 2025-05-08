@@ -1,7 +1,7 @@
 {
   "name": "Youtube Rush",
   "description": "Add a small css style to remove outline for progress bar, enhance UI/UX. Support new MUI from 28th April",
-  "version": "2.0",
+  "version": "2.1",
   "manifest_version": 3,
   "action": {
     "default_popup": "popup/popup.html",
