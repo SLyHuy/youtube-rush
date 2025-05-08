@@ -1,0 +1,45 @@
+.ytp-progress-bar-container * {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.ytp-progress-bar-container {
+  bottom: 6px!important;
+  opacity: 0.8!important;
+  z-index: 999!important;
+}
+
+.ytp-delhi-modern .ytp-chrome-bottom {
+  height: 60px;
+  opacity: 0.8;
+}
+
+/* Title in fullscreen */
+.ytp-fullscreen-metadata,
+/* Quick actions fullscreen */
+.ytp-fullscreen-quick-actions,
+/* Logo brand */
+.ytp-player-content.ytp-iv-player-content
+{
+  display: none!important;
+}
+
+.ytp-chrome-bottom .ytp-right-controls > *,
+.ytp-chrome-bottom .ytp-chrome-controls .ytp-left-controls .ytp-button,
+.ytp-chrome-bottom .ytp-chrome-controls .ytp-left-controls .ytp-time-wrapper {
+  background-color: transparent!important;
+}
+
+.ytp-chrome-bottom * {
+  backdrop-filter: none!important;
+}
+
+/* Button Scroll to see detail */
+.ytp-fullerscreen-edu-button.ytp-fullerscreen-edu-button-subtle {
+  display: none!important;
+}
+
+.ytp-chrome-bottom .ytp-right-controls {
+  backdrop-filter: none !important;
+  background-color: transparent!important;
+}
