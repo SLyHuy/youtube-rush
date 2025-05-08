@@ -12,6 +12,8 @@
 - 🔐 **Privacy First**: No scripts injected, just pure CSS  
 - 💻 **Open Source**: [GitHub Repository](https://github.com/SLyHuy/youtube-rush)
 
+![photo-before-after](https://github.com/user-attachments/assets/e85cad27-2003-473b-a0b3-c66134b6cf39)
+
 ## 🔄 Change Log
 
 ### * Version 2.1 - May 8
