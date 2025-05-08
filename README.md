@@ -8,7 +8,7 @@
 - 🔍 **Fullscreen Focus Mode**: Hides video title, share/like buttons, and YouTube brand logo in fullscreen  
 - 🎨 **Transparent UI**: Makes control backgrounds transparent and adjusts button positioning for a cleaner layout  
 - 🖥️ **Optimized for Long Videos & Streams**: Ideal for uninterrupted viewing  
-- 🆕 **Supports Material You (MUI)**: Fully compatible with the updated YouTube UI as of April 28  
+- 🆕 **Supports Material Design**: Fully compatible with the updated YouTube UI as of April 28  
 - 🔐 **Privacy First**: No scripts injected, just pure CSS  
 - 💻 **Open Source**: [GitHub Repository](https://github.com/SLyHuy/youtube-rush)
 
