@@ -16,6 +16,10 @@
 
 ## 🔄 Change Log
 
+### * Version 2.2 - May 15
+
+- Youtube rollback previous UI, so we'll rollback some CSS to support previous UI.
+
 ### * Version 2.1 - May 8
 
 - Updated progress bar positioning and `z-index`
