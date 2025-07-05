@@ -9,6 +9,11 @@
   z-index: 999!important;
 }
 
+/* Version 1: Top UI */
+.ytp-chrome-top {
+  display: none!important;
+}
+
 .ytp-delhi-modern .ytp-chrome-bottom {
   height: 60px;
   opacity: 0.8;
@@ -42,4 +47,15 @@
 .ytp-chrome-bottom .ytp-right-controls {
   backdrop-filter: none !important;
   background-color: transparent!important;
+}
+
+
+/* Youtube Short */
+
+.metadata-container {
+  visibility: hidden!important;
+}
+
+#reel-video-renderer:hover .metadata-container {
+  visibility: visible!important;
 }

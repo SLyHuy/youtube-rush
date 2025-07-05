@@ -16,6 +16,11 @@
 
 ## 🔄 Change Log
 
+### * Version 2.3 - Jul 5
+
+- **Hide meta-data UI in YouTube Short:** The user interface for YouTube Shorts has been updated to hide metadata, providing a cleaner and more immersive viewing area.
+- **Improve visibility all detail of short video:** All essential details of the short video are now more clearly visible for an improved user experience.
+
 ### * Version 2.2 - May 15
 
 - Youtube rollback previous UI, so we'll rollback some CSS to support previous UI.
