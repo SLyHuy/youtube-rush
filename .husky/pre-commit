@@ -1,4 +1,4 @@
-STAGED_CSS=$(git diff --cached --name-only --diff-filter=ACM | grep '\.css$')
+STAGED_CSS=$(git diff --cached --name-only --diff-filter=ACM | grep '\.css$' || true)
 
 if [ -z "$STAGED_CSS" ]; then
   exit 0
