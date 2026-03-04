@@ -9,12 +9,21 @@
 - 🎨 **Transparent UI**: Makes control backgrounds transparent and adjusts button positioning for a cleaner layout  
 - 🖥️ **Optimized for Long Videos & Streams**: Ideal for uninterrupted viewing  
 - 🆕 **Supports Material Design**: Fully compatible with the updated YouTube UI as of April 28  
-- 🔐 **Privacy First**: No scripts injected, just pure CSS  
+- ⚙️ **Customizable**: Adjust opacity and progress bar position from the popup  
+- 🔐 **Privacy First**: Minimal permissions, only `storage` (zero user-facing warnings)  
 - 💻 **Open Source**: [GitHub Repository](https://github.com/SLyHuy/youtube-rush)
 
 ![photo-before-after](https://github.com/user-attachments/assets/e85cad27-2003-473b-a0b3-c66134b6cf39)
 
 ## 🔄 Change Log
+
+### * Version 3.0 - Mar 4 ⚠️ Breaking Change
+
+- **New: Popup settings panel** — Configure the extension directly from the toolbar popup with a modern dark UI.
+- **New: Opacity sliders** — Adjust controls opacity and progress bar opacity independently (0–100%).
+- **New: Progress bar position toggle** — Choose between YouTube default position or pinned to the bottom of the player.
+- **Breaking:** Opacity and progress bar position are now user-configurable and applied dynamically via a content script. The static CSS values from v2.x are replaced by settings stored in `chrome.storage.sync`.
+- **New permission:** `storage` (zero user-facing warning) — required to persist your settings across sessions.
 
 ### * Version 2.4 - Mar 4
 

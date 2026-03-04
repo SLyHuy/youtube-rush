@@ -1,16 +1,192 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
+    body {
+      width: 300px;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      font-size: 13px;
+      color: #e0e0e0;
+      background: #1a1a1a;
+      padding: 16px;
+    }
+
+    h1 {
+      font-size: 15px;
+      font-weight: 600;
+      color: #fff;
+      margin-bottom: 4px;
+    }
+
+    .subtitle {
+      font-size: 11px;
+      color: #666;
+      margin-bottom: 20px;
+    }
+
+    .section {
+      margin-bottom: 20px;
+    }
+
+    .section-title {
+      font-size: 11px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: #888;
+      margin-bottom: 12px;
+    }
+
+    .row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 12px;
+    }
+
+    .row label {
+      color: #ccc;
+      flex: 1;
+    }
+
+    .row .value {
+      font-size: 12px;
+      color: #aaa;
+      min-width: 34px;
+      text-align: right;
+      margin-right: 8px;
+    }
+
+    input[type='range'] {
+      width: 110px;
+      accent-color: #f03;
+      cursor: pointer;
+    }
+
+    .toggle-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 10px;
+    }
+
+    .toggle-row > label:first-child {
+      color: #ccc;
+      flex: 1;
+    }
+
+    .toggle {
+      position: relative;
+      flex: 0 0 36px;
+      width: 36px;
+      height: 20px;
+    }
+
+    .toggle input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+
+    .slider {
+      position: absolute;
+      inset: 0;
+      background: #444;
+      border-radius: 20px;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+
+    .slider::before {
+      content: '';
+      position: absolute;
+      width: 14px;
+      height: 14px;
+      left: 3px;
+      top: 3px;
+      background: #fff;
+      border-radius: 50%;
+      transition: transform 0.2s;
+    }
+
+    .toggle input:checked + .slider {
+      background: #f03;
+    }
+
+    .toggle input:checked + .slider::before {
+      transform: translateX(16px);
+    }
+
+    .divider {
+      border: none;
+      border-top: 1px solid #2a2a2a;
+      margin: 16px 0;
+    }
+
+    .footer {
+      font-size: 11px;
+      color: #555;
+      text-align: center;
+    }
+
+    .footer a {
+      color: #666;
+      text-decoration: none;
+    }
+
+    .footer a:hover {
+      color: #aaa;
+    }
+  </style>
+</head>
 <body>
-  <section style="width: 300px">
-    <h1>Youtube Rush Extensions</h1>
-    <p style="font-size: 15px; line-height: 1.5">Automatically add a small css style to remove outline for progressbar,
-      enhance UI/UX
-      for everyone like
-      watching
-      long
-      videos or livestreams.</p>
-    <p style="font-size: 15px; line-height: 1.5">by <strong>s.lyhuy@gmail.com</strong></p>
-    <section>
-</body>
+  <h1>YouTube Rush</h1>
+  <p class="subtitle">by s.lyhuy@gmail.com</p>
 
+  <div class="section">
+    <div class="section-title">Opacity</div>
+
+    <div class="row">
+      <label>Controls</label>
+      <span class="value" id="controlsOpacityValue">40%</span>
+      <input type="range" id="controlsOpacity" min="0" max="100" value="40">
+    </div>
+
+    <div class="row">
+      <label>Progress bar</label>
+      <span class="value" id="progressBarOpacityValue">40%</span>
+      <input type="range" id="progressBarOpacity" min="0" max="100" value="40">
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <div class="section">
+    <div class="section-title">Progress Bar Position</div>
+
+    <div class="toggle-row">
+      <label>Pin to bottom of player</label>
+      <label class="toggle">
+        <input type="checkbox" id="progressBarBottom" checked>
+        <span class="slider"></span>
+      </label>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <p class="footer">
+    <a href="https://github.com/SLyHuy/youtube-rush" target="_blank">GitHub</a>
+    &nbsp;·&nbsp; v<span id="version"></span>
+  </p>
+
+  <script src="popup.js"></script>
+</body>
 </html>

@@ -4,11 +4,6 @@
 }
 
 .ytp-progress-bar-container {
-  position: absolute !important;
-  bottom: 4px !important;
-  left: 0 !important;
-  right: 0 !important;
-  opacity: 0.4 !important;
   z-index: 999 !important;
 }
 
@@ -22,12 +17,7 @@
   opacity: 0.8;
 }
 
-.ytp-chrome-controls .ytp-button,
-.ytp-chrome-controls .ytp-time-display,
-.ytp-chrome-controls .ytp-volume-area,
-.ytp-chrome-controls .ytp-autonav-toggle-button-container {
-  opacity: 0.4 !important;
-}
+/* opacity for controls is applied dynamically via js/content.js */
 
 /* Title in fullscreen */
 .ytp-fullscreen-metadata,
