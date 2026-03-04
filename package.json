@@ -4,7 +4,8 @@
   "description": "**YouTube Rush** is a lightweight web extension designed to subtly improve the YouTube interface for long-form content and live streams. It automatically applies CSS tweaks to clean up distracting UI elements and enhance viewer focus—especially in fullscreen mode.",
   "main": "index.js",
   "scripts": {
-    "lint": "stylelint \"css/**/*.css\""
+    "lint": "stylelint \"css/**/*.css\"",
+    "pack": "node -e \"const v=require('./manifest.json').version; const {execSync}=require('child_process'); const f='youtube-rush-v'+v+'.zip'; try{require('fs').unlinkSync(f)}catch(e){} execSync('zip -r '+f+' manifest.json css/ icons/ popup/', {stdio:'inherit'}); console.log('Created '+f);\""
   },
   "repository": {
     "type": "git",

@@ -112,18 +112,22 @@ Add a changelog entry in `README.md`:
 
 ### 2. Create a ZIP package
 
-From the repo root, run:
+Run the pack script — it reads the version from `manifest.json` automatically:
 
 ```bash
-zip -r youtube-rush-v2.4.zip . \
-  --exclude "*.git*" \
-  --exclude "*.DS_Store" \
-  --exclude "CONTRIBUTING.md" \
-  --exclude "*.md" \
-  --exclude "__MACOSX*"
+npm run pack
 ```
 
-Or using a GUI: select all files **inside** the repo root (not the folder itself), right-click → Compress.
+This creates `youtube-rush-v<version>.zip` containing only the files the extension needs:
+
+```
+manifest.json
+css/
+icons/
+popup/
+```
+
+All dev files (`node_modules`, `package.json`, `.stylelintrc.json`, `.gitignore`, `photos/`, `*.md`, `*.zip`) are excluded.
 
 > The ZIP must contain `manifest.json` at its root — not inside a subdirectory.
 
