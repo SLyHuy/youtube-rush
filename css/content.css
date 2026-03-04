@@ -4,9 +4,12 @@
 }
 
 .ytp-progress-bar-container {
-  /* bottom: 2px!important; */
-  opacity: 0.4!important;
-  z-index: 999!important;
+  position: absolute !important;
+  bottom: 4px !important;
+  left: 0 !important;
+  right: 0 !important;
+  opacity: 0.4 !important;
+  z-index: 999 !important;
 }
 
 /* Version 1: Top UI */
@@ -17,6 +20,13 @@
 .ytp-delhi-modern .ytp-chrome-bottom {
   height: 60px;
   opacity: 0.8;
+}
+
+.ytp-chrome-controls .ytp-button,
+.ytp-chrome-controls .ytp-time-display,
+.ytp-chrome-controls .ytp-volume-area,
+.ytp-chrome-controls .ytp-autonav-toggle-button-container {
+  opacity: 0.4 !important;
 }
 
 /* Title in fullscreen */
@@ -35,7 +45,7 @@
   background-color: transparent!important;
 }
 
-.ytp-chrome-bottom * {
+.ytp-chrome-bottom * {`
   backdrop-filter: none!important;
 }
 

@@ -16,6 +16,11 @@
 
 ## 🔄 Change Log
 
+### * Version 2.4 - Mar 4
+
+- **Timed markers pinned to bottom:** `ytp-timed-markers-container` is now repositioned to the very bottom of the player with a clean 4px gap, separated from the control bar.
+- **Dimmed player controls:** All control buttons (play/pause, volume, autoplay, subtitles, settings, theater, fullscreen) now render at 0.4 opacity for a less intrusive UI.
+
 ### * Version 2.3 - Jul 5
 
 - **Hide meta-data UI in YouTube Short:** The user interface for YouTube Shorts has been updated to hide metadata, providing a cleaner and more immersive viewing area.
