@@ -35,6 +35,23 @@ youtube-rush/
 
 - Google Chrome (or any Chromium-based browser)
 - A text editor (VS Code recommended)
+- Node.js (for CSS linting)
+
+### Install dependencies
+
+After cloning, install the dev dependencies (stylelint):
+
+```bash
+npm install
+```
+
+This also activates the pre-commit hook automatically — stylelint will run on any staged `.css` file before every commit and block it if there are errors.
+
+To lint manually at any time:
+
+```bash
+npm run lint
+```
 
 ### Install as an unpacked extension
 

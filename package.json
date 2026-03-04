@@ -1,0 +1,24 @@
+{
+  "name": "youtube-rush",
+  "version": "1.0.0",
+  "description": "**YouTube Rush** is a lightweight web extension designed to subtly improve the YouTube interface for long-form content and live streams. It automatically applies CSS tweaks to clean up distracting UI elements and enhance viewer focus—especially in fullscreen mode.",
+  "main": "index.js",
+  "scripts": {
+    "lint": "stylelint \"css/**/*.css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SLyHuy/youtube-rush.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SLyHuy/youtube-rush/issues"
+  },
+  "homepage": "https://github.com/SLyHuy/youtube-rush#readme",
+  "devDependencies": {
+    "stylelint": "^17.4.0",
+    "stylelint-config-standard": "^40.0.0"
+  }
+}
