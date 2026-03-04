@@ -10,7 +10,9 @@
     "js/"
   ],
   "scripts": {
-    "lint": "stylelint \"css/**/*.css\"",
+    "lint:css": "stylelint \"css/**/*.css\"",
+    "lint:js": "eslint \"js/**/*.js\" \"popup/**/*.js\"",
+    "lint": "npm run lint:css && npm run lint:js",
     "pack": "npm run lint && node -e \"const v=require('./manifest.json').version; const {execSync}=require('child_process'); const f='youtube-rush-v'+v+'.zip'; try{require('fs').unlinkSync(f)}catch(e){} execSync('zip -r '+f+' manifest.json css/ icons/ popup/ js/', {stdio:'inherit'}); console.log('Created '+f);\"",
     "prepare": "husky"
   },
@@ -26,6 +28,9 @@
   },
   "homepage": "https://github.com/SLyHuy/youtube-rush#readme",
   "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.0.2",
+    "globals": "^17.4.0",
     "husky": "^9.1.7",
     "stylelint": "^17.4.0",
     "stylelint-config-standard": "^40.0.0"

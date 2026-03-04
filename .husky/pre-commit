@@ -1,17 +1,24 @@
 STAGED_CSS=$(git diff --cached --name-only --diff-filter=ACM | grep '\.css$' || true)
+STAGED_JS=$(git diff --cached --name-only --diff-filter=ACM | grep '\.js$' | grep -v '^eslint\.config' || true)
 
-if [ -z "$STAGED_CSS" ]; then
-  exit 0
+if [ -n "$STAGED_CSS" ]; then
+  echo "Running stylelint on staged CSS files..."
+  npx stylelint $STAGED_CSS
+  if [ $? -ne 0 ]; then
+    echo ""
+    echo "stylelint failed. Please fix the errors above before committing."
+    exit 1
+  fi
+  echo "stylelint passed."
 fi
 
-echo "Running stylelint on staged CSS files..."
-
-npx stylelint $STAGED_CSS
-
-if [ $? -ne 0 ]; then
-  echo ""
-  echo "stylelint failed. Please fix the errors above before committing."
-  exit 1
+if [ -n "$STAGED_JS" ]; then
+  echo "Running eslint on staged JS files..."
+  npx eslint $STAGED_JS
+  if [ $? -ne 0 ]; then
+    echo ""
+    echo "eslint failed. Please fix the errors above before committing."
+    exit 1
+  fi
+  echo "eslint passed."
 fi
-
-echo "stylelint passed."
