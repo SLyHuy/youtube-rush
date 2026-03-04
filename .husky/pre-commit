@@ -1,0 +1,17 @@
+STAGED_CSS=$(git diff --cached --name-only --diff-filter=ACM | grep '\.css$')
+
+if [ -z "$STAGED_CSS" ]; then
+  exit 0
+fi
+
+echo "Running stylelint on staged CSS files..."
+
+npx stylelint $STAGED_CSS
+
+if [ $? -ne 0 ]; then
+  echo ""
+  echo "stylelint failed. Please fix the errors above before committing."
+  exit 1
+fi
+
+echo "stylelint passed."

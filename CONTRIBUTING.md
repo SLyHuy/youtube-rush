@@ -45,7 +45,7 @@ After cloning, install the dev dependencies (stylelint):
 npm install
 ```
 
-This also activates the pre-commit hook automatically — stylelint will run on any staged `.css` file before every commit and block it if there are errors.
+This also activates the husky pre-commit hook automatically (via the `prepare` script) — stylelint will run on any staged `.css` file before every commit and block it if there are errors.
 
 To lint manually at any time:
 
